@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url(/Images/Homepage.jpg);
+    height:70vh;
+    background-position: center center;
+    background-size:max(1200px,100vw) ;
+    position:relative;
+    background-repeat: no-repeat;
+}
+.main .box{
+    height:70vh;
+    width:100%;
+    background-color: black;
+    opacity:0.6;
+    position:absolute;
+    top:0;
+}
+nav{
+    display:flex;
+    max-width: 60vw;
+    margin:auto;
+    height:100px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:130px;
+    position:relative;
+    z-index: 10;
+}
+nav button{
+    position:relative;
+    z-index: 10;
+}
+.hero{
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    position:relative;
+    gap:23px;
+    padding:0 30px;
+}
+.hero>:nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align:center;
+}
+.hero :nth-child(2){
+    font-weight:400;
+    size:24px;
+    text-align:center;
+
+}
+.hero :nth-child(3){
+    font-weight:400;
+    size:20px;
+    text-align:center;
+}
+.separation{
+    height: 7px;
+    background-color: rgb(42, 41, 41);
+    
+}
+.btn{
+    padding:3px 8px;
+    /* font-weight:bold; */
+    color:white;
+    border-radius: 4px;
+    cursor:pointer;
+    background-color: rgba(18, 16, 16, 0.833);
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding:3px 24px;
+    font-size: 20px;
+    border-radius:4px;
+}
+.btn-red-sm{
+    background-color: red;
+    color:white;
+}
+.hero-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+}
+
+.main input{
+    padding:7px 101px 8px 14px;
+    font-weight:450;
+    color:white;
+    font-size: 12px;
+    border-radius:4px;
+    background-color: rgba(23,23,23,0.7);
+    border:1px solid rgbs(246,238,0.5);
+}
+.first{
+    height:80vh;
+    margin:auto;
+    max-width:70vw;
+    color:white;
+    display:flex;
+    /* flex-direction:row ; */
+    justify-content:center;
+    align-items:center;
+    /* font-family: 'Martel sans' sans-serif;
+    gap:15px; */
+   
+}
+/* @media screen and (max-width:1200px){
+  .first{
+    flex-wrap: wrap;
+  }
+} */
+.secImg{
+    position:relative;
+}
+.secImg img{
+    width:30vw;
+    position:relative;
+    z-index:10;
+}    
+.secImg video{
+    /* position: absolute;
+    top: 71px;
+    right: 64px;
+    width: 73%; */
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 20%;
+    left: 13%;
+}
+section.first > div{
+    display: flex;
+    flex-direction: column;
+    padding:34px 0;
+    /* flex-wrap: wrap; */
+}
+section.first > div :nth-child(1){
+    font-weight:bold;
+    font-size:45px;
+    /* text-align: center; */
+}
+section.first > div :nth-child(2){
+    font-size: 24px;
+    /* text-align: center;   */
+}
+
+.faq h2{
+    text-align:center;
+    font-size: 48px;
+}
+.faq{
+    background-color: black;
+    color:white;
+    padding:34px;
+    font-size: 24px;
+}
+.faqbox{
+    transition:all 0.5s ease-out;
+    display:flex;
+    background-color: rgb(41, 38, 38);
+    padding:24px;
+    max-width:55vw;
+    margin:34px auto;
+    justify-content: space-between;
+    cursor:pointer;
+}
+.faqbox:hover{
+      background-color: #414141;
+      color:white;
+}
+
+footer{
+    color:white;
+    max-width:60vw;
+    margin:auto;
+    padding:34px;
+}
+.footer a{
+    /* text-decoration: none; */
+    color:whitesmoke;
+}
+footer .questions{
+    
+   padding:34px 0;
+}
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color:white;
+    
+}
+
+.faq .hero-buttons input{
+    background-color: rgba(23,23,23,0.7);
+    padding:5px;
+}
+
+@media screen and (max-width:1200px){
+    .first{
+      flex-wrap: wrap;
+    }
+  }
+.footer-item{
+    display:flex;
+    flex-direction: column;
+    gap:23px;
+}
+
+@media screen and (max-width:1200px){
+
+    .footer{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:25px;
+    }
+
+    .hero>:nth-child(1){
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        font-size: 32px;
+        text-align:center;
+    }
+
+    .hero>:nth-child(2){
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        text-align:center;
+    }
+
+    .hero>:nth-child(3){
+        font-family: 'Poppins', sans-serif;
+        /* font-weight: bold; */
+        font-size: 18px;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:16px;
+    }
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .btn-red{
+        padding:4px 4px;
+        border:6px;
+    }
+
+    .faq h2{
+        font-size:32px;
+    }
+    footer{
+        max-width:90vw;
+    }
+    .footer-item{
+        align-items: center;
+    }
+}
